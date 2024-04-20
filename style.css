@@ -201,18 +201,4 @@ body.mobile #menu>* {
   display: inline!important
 }
 
-/* Responsive Design */
-@media screen and (max-width: 768px) {
-  /* Add responsive styles here */
-}
-
-/* Vendor Prefixes */
-/* Add vendor prefixes where necessary */
-
-/* Use of Classes instead of IDs */
-.opt,
-.opt::after,
-.opt::before {
-  box-sizing: border-box;
-}
 
