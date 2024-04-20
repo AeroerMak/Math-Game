@@ -14,7 +14,7 @@
 
 body,
 html {
-  background: #263238;
+  background: #394e58;
   height: 100%;
   margin: 0;
   overflow: hidden;
@@ -57,7 +57,7 @@ label {
   background: rgba(0, 0, 0, .5);
   color: #fff;
   cursor: default;
-  font: 300 64px/96px 'Segoe UI', 'Helvetica Neue', sans-serif;
+  font: 300 64px/96px 'Poppins', 'Helvetica Neue';
   height: 1080px;
   padding: 0 100px;
   transform-origin: 0 0;
@@ -75,20 +75,40 @@ label {
 }
 
 h1 {
-  font: 300 96px/1 'Segoe UI', 'Helvetica Neue', sans-serif;
+  font: 300 96px/1 'Poppins', 'Helvetica Neue';
   margin-top: 80px;
-  text-shadow: 2px 0 0 red, -2px 0 0 #0ff
+  text-shadow:  #3dc8b8;
 }
 
 p {
-  text-shadow: 1px 0 0 red, -1px 0 0 #0ff
+  text-shadow:  #3dc8b8;
 }
+
+.Develop {
+  font-family: 'Poppins', 'Helvetica Neue';
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff; /* Dark gray text color */
+
+}
+
+.Develop a {
+  color: #2f8ff6; /* Blue color for the link */
+  text-decoration: none; /* Remove underline */
+}
+
+.Develop a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+
 
 #reset,
 #start {
-  -webkit-animation: blink .7s steps(2, start) infinite;
-  animation: blink .7s steps(2, start) infinite;
-  background: #E1FF5F;
+  -webkit-animation: blink .8s steps(2, start) infinite;
+  animation: blink .8s steps(2, start) infinite;
+  background: #3dc8b8;
   border-radius: 2px;
   color: #202020;
   cursor: pointer;
@@ -108,13 +128,13 @@ p {
 
 @-webkit-keyframes blink {
   to {
-    outline: #E1FF5F solid 4px
+    outline: #3dc8b8 solid 4px
   }
 }
 
 @keyframes blink {
   to {
-    outline: #E1FF5F solid 4px
+    outline: #3dc8b8 solid 4px
   }
 }
 
@@ -162,11 +182,11 @@ p {
 }
 
 .opt:checked::before {
-  background: #c6ff00
+  background: #3dc8b8
 }
 
 label {
-  color: #eeff41
+  color: #35c5b4
 }
 
 body.mobile #menu>* {
@@ -180,3 +200,19 @@ body.mobile #menu>* {
 #q+label {
   display: inline!important
 }
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  /* Add responsive styles here */
+}
+
+/* Vendor Prefixes */
+/* Add vendor prefixes where necessary */
+
+/* Use of Classes instead of IDs */
+.opt,
+.opt::after,
+.opt::before {
+  box-sizing: border-box;
+}
+
